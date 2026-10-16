@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+<title id="title">Flash Music 功能图解</title><desc id="desc">打开音乐：文件夹 / 多个文件：自动排序与去重；开始聆听：播放列表 / 随机循环：频谱与流体可视化；整理专辑：CUE 分轨 / 单曲导出：标签与封面保留。功能示意，非界面截图。</desc>
+<rect width="1200" height="520" rx="24" fill="#0f172a"/>
+<circle cx="1120" cy="30" r="180" fill="#2dd4bf" opacity=".08"/>
+<g font-family="'Segoe UI','Microsoft YaHei','Noto Sans CJK SC',sans-serif">
+<rect x="48" y="40" width="5" height="82" rx="2" fill="#2dd4bf"/>
+<text x="76" y="76" font-size="38" font-weight="700" fill="#f8fafc">Flash Music</text>
+<text x="76" y="116" font-size="22" fill="#cbd5e1">打开音乐文件夹，让专辑自然播放</text>
+<text x="48" y="170" font-size="18" fill="#2dd4bf">本地音乐 · CUE 分轨 · 无损 FLAC 导出</text>
+<rect x="48" y="210" width="352" height="220" rx="16" fill="#1e293b" stroke="#334155"/>
+<circle cx="90" cy="254" r="20" fill="#2dd4bf" opacity=".18"/><text x="90" y="261" text-anchor="middle" font-size="19" font-weight="700" fill="#2dd4bf">1</text>
+<text x="74" y="310" font-size="28" font-weight="600" fill="#f1f5f9">打开音乐</text>
+<text x="74" y="354" font-size="20" fill="#cbd5e1">文件夹 / 多个文件</text>
+<text x="74" y="390" font-size="18" fill="#94a3b8">自动排序与去重</text><path d="M405 320h14m-5-5 5 5-5 5" fill="none" stroke="#2dd4bf" stroke-width="2"/><rect x="424" y="210" width="352" height="220" rx="16" fill="#1e293b" stroke="#334155"/>
+<circle cx="466" cy="254" r="20" fill="#2dd4bf" opacity=".18"/><text x="466" y="261" text-anchor="middle" font-size="19" font-weight="700" fill="#2dd4bf">2</text>
+<text x="450" y="310" font-size="28" font-weight="600" fill="#f1f5f9">开始聆听</text>
+<text x="450" y="354" font-size="20" fill="#cbd5e1">播放列表 / 随机循环</text>
+<text x="450" y="390" font-size="18" fill="#94a3b8">频谱与流体可视化</text><path d="M781 320h14m-5-5 5 5-5 5" fill="none" stroke="#2dd4bf" stroke-width="2"/><rect x="800" y="210" width="352" height="220" rx="16" fill="#1e293b" stroke="#334155"/>
+<circle cx="842" cy="254" r="20" fill="#2dd4bf" opacity=".18"/><text x="842" y="261" text-anchor="middle" font-size="19" font-weight="700" fill="#2dd4bf">3</text>
+<text x="826" y="310" font-size="28" font-weight="600" fill="#f1f5f9">整理专辑</text>
+<text x="826" y="354" font-size="20" fill="#cbd5e1">CUE 分轨 / 单曲导出</text>
+<text x="826" y="390" font-size="18" fill="#94a3b8">标签与封面保留</text>
+<text x="48" y="477" font-size="16" fill="#94a3b8">功能流程示意 · 非应用界面截图</text></g></svg>
+

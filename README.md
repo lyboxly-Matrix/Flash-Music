@@ -1,4 +1,30 @@
-# ⚡ Flash Music
+# Flash Music
+
+**打开音乐文件夹，让专辑自然播放。**
+
+本地音乐 · CUE 分轨 · 无损 FLAC 导出。
+
+[下载 Windows 版本](https://github.com/lyboxly-Matrix/Flash-Music/releases) · [亮点](#项目亮点) · [快速上手](#快速上手) · [使用与开发](#使用与开发) · [反馈问题](https://github.com/lyboxly-Matrix/Flash-Music/issues)
+
+![Flash Music 功能流程：打开音乐 → 开始聆听 → 整理专辑](overview.svg)
+
+> 图中为功能流程示意，并非应用界面截图。
+
+## 项目亮点
+
+| 亮点 | 能帮你做什么 |
+| --- | --- |
+| **日常听歌轻松上手** | 打开文件夹即可生成播放列表，支持随机、循环与播放状态恢复。 |
+| **整轨专辑也能逐首播放** | 读取 CUE，把单文件专辑展开成曲目列表。 |
+| **导出兼顾格式与元数据** | 无损来源可导出 FLAC 并保留参数、标签和封面；有损来源按原格式拷贝。 |
+
+## 快速上手
+
+已有打包版：双击 `FlashMusic.exe` → 打开音乐文件夹 → 选择曲目播放。
+
+源码运行需 Windows 10/11、Python 3.11；分轨导出另需系统 FFmpeg。支持的播放格式取决于系统编解码器。
+
+## 使用与开发
 
 简洁的 **Windows 本地音乐播放器**，面向日常听歌：打开文件夹、播放列表、随机/循环，导入时自动轻量整理。
 
@@ -24,7 +50,7 @@
 ## 环境要求
 
 - Windows 10/11
-- Python **3.11**（推荐路径示例：D:\Python311\python.exe）
+- Python **3.11**（推荐路径示例：python）
 - 依赖见 `requirements.txt`
 
 ### 播放后端说明
@@ -40,23 +66,22 @@ Flash Music 使用 **Windows Media Foundation**（WinRT `Windows.Media.Playback.
 
 在项目根目录下安装依赖，再用 源代码 里的入口启动：
 
-`at
-cd /d "F:\Vibe Coding\Flash Music"
-D:\Python311\python.exe -m pip install -r requirements.txt
-D:\Python311\python.exe 源代码\main.py
+```bat
+python -m pip install -r requirements.txt
+python 源代码\main.py
 ```
 
 或（若 python 已指向 3.11）：
 
-`at
+```bat
 pip install -r requirements.txt
 python 源代码\main.py
 ```
 
 也可先进入源码目录再运行（相对导入同样可用）：
 
-`at
-cd /d "F:\Vibe Coding\Flash Music\源代码"
+```bat
+cd 源代码
 python main.py
 ```
 
@@ -64,28 +89,27 @@ python main.py
 
 ### 自检（可选）
 
-`at
-cd /d "F:\Vibe Coding\Flash Music"
-D:\Python311\python.exe 源代码\selftest.py
+```bat
+python 源代码\selftest.py
 ```
 
 ## 打包（PyInstaller）
 
 在项目根目录执行（会读取 FlashMusic.spec，入口为 源代码\main.py）：
 
-`at
+```bat
 build.bat
 ```
 
 成功后：
 
 - dist\FlashMusic.exe（构建产物）
-- 根目录 FlashMusic.exe（uild.bat 会自动复制一份）
+- 根目录 FlashMusic.exe（build.bat 会自动复制一份）
 
 也可：
 
-`at
-D:\Python311\python.exe -m PyInstaller FlashMusic.spec
+```bat
+python -m PyInstaller FlashMusic.spec
 ```
 
 ## 配置位置
@@ -99,7 +123,7 @@ D:\Python311\python.exe -m PyInstaller FlashMusic.spec
 
 ## 项目结构
 
-`````
+```
 Flash Music/
   FlashMusic.exe      # 单文件可执行（可选，双击即用）
   README.md
@@ -187,3 +211,4 @@ winget install Gyan.FFmpeg
 
 在播放列表中右键曲目 → **导出为 FLAC（无损）**；Ctrl/Shift 多选后显示 **导出所选 N 首为 FLAC（无损）**。
 CUE 分轨按采样精确切割，普通无损文件整首转为 FLAC，规则与上面的整张专辑导出相同（标签、封面、`*_FLAC` 默认文件夹、记住上次文件夹、有损来源按原格式拷贝）。需要系统 ffmpeg。
+
